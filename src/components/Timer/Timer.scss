@@ -1,0 +1,63 @@
+@import "../Sass/mixins";
+
+.timer{
+    position: relative;
+    margin-top: 41px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 480px;
+    padding: 20px 0px;
+    border-radius: 6px;
+    .next-icon{
+        position: absolute;
+        font-size: 48px;
+        color:#FCEFEF;
+        right: 55px;
+        bottom: 35px;
+        cursor: pointer;
+    }
+    // margin-bottom: 20px;
+    .timer-cart{
+        @include flex();
+     .option{
+         cursor: pointer;
+        //    margin-left: 18px;
+           padding: 2px 12px;
+       }
+       .bg{
+        background: none rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+       }
+       b{
+           font-family: san-serif;
+           font-weight: bold;
+           font-size: 17px;
+       }
+    }
+    h1{
+        font-size: 120px;
+        font-weight: bold;
+        // margin-top: 200px;
+         text-align: center;
+    }
+    .start{
+        cursor: pointer;
+        border: none;
+        margin: 20px 0px 0px;
+        padding: 0px 12px;
+        border-radius: 4px;
+        font-family: ArialRounded;
+        font-size: 22px;
+        height: 55px;
+        color: rgb(217, 85, 80);
+        font-weight: bold;
+        width: 200px;
+        background-color: white;
+        transition: color 0.5s ease-in-out 0s;
+        border: none;
+    }
+    .start:focus{outline:none};
+    .stop{
+        box-shadow: rgb(235 235 235) 0px 6px 0px;
+    }
+}

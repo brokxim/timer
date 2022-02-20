@@ -1,0 +1,29 @@
+.tasks{
+    position: relative;
+    .popup{ 
+    left: 282px;
+    top: 30px;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 4px 0px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 10px 20px, rgb(0 0 0 / 10%) 0px 3px 6px;
+    display: block;
+    pointer-events: auto;
+    position: absolute;
+    background-color: white;
+    transform: translateY(10px);
+    width: 200px;
+    right: 0px;
+    z-index: 1;
+    &_icon{
+    font-family: Roboto;
+    color: rgb(79, 43, 45);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+    }
+}
