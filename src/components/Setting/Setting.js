@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Modal,ModalBody} from 'reactstrap';
 import {FiX} from 'react-icons/fi';
+import Switch from '@mui/material/Switch';
 import {HiLockClosed} from 'react-icons/hi';
 import SliderSizes from './Slider';
 import Popup from './Popup';
@@ -19,6 +20,8 @@ const onSubmit=(e)=>{
     toggle();
     switchStage(editT.id-1);
   }
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
     const handleChange=(e,tim,i)=>{
       setCurrent(Number(e.target.value))
     console.log(i)
@@ -52,11 +55,11 @@ const onSubmit=(e)=>{
              </form>
            <div className='auto-start'>
              <div><span>Auto start Breaks?</span></div>
-             <div>yoq</div>
+             <div>  <Switch {...label} defaultChecked /></div>
            </div>
            <div className='auto-start'>
              <div><span>Auto start Pomodoros?</span></div>
-             <div>yoq</div>
+             <div>  <Switch {...label} defaultChecked /></div>
            </div>
            <div className='auto-start'>
              <div><span>Long Break interval</span></div>
