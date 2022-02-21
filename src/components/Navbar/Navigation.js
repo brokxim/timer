@@ -269,7 +269,7 @@ console.log(taskTime)
             </form>
             <div className="modal_footer">
                 <button>Cancel</button>
-                <button type="submit" form='form' className={`save_btn ${(num>0 && name) ? 'active_btn': ''} `}>Save</button>
+                <button type="submit" form={`${(num>0 && name) ? 'form':''}`} className={`save_btn ${(num>0 && name) ? 'active_btn': ''} `}>Save</button>
             </div>
             </div> 
 
