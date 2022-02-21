@@ -1,9 +1,7 @@
 import * as types from '../actions/actionTypes';
 
 function taskReducer(state={
-    tasks:[
-        {id:1,text1:'some',num:0,text2:'any'}
-]
+    tasks:[]
 }, action){
     switch(action.type){
         case types.ADD_TASK:
