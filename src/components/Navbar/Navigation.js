@@ -123,7 +123,6 @@ const onSubmit=(e)=>{
   let text1 = e.target[0].value;
     setNum(Number(e.target[1].value));
   let text2= e.target[2].value;
-    setArea(e.target[2].value)
   
   let obj={id:task.length+1,text1,num,text2}
   addedTask(obj);
